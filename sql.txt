@@ -1,0 +1,79 @@
+----criar banco
+create database <nome>
+
+----criar tabela
+create table <nome>(
+	<campo> tipo not null primary key,
+	<campo2> tipo,
+	...
+)
+
+----adicionar coluna
+
+alter table <tabela>
+add <campo> tipo
+
+----modificar coluna
+
+alter table <tabela>
+change <velho> <novo> tipo
+
+----apagar coluna
+
+alter table <tabela>
+drop <campo>
+
+----inserir na tabela
+1ª só colocar alguns campos
+insert into <tabela>(<campo1>,<campo2>,<campo3>) 
+values (<valor1>,<valor2>,<valor3>)
+
+2º preencher todos os campos
+insert into <tabela> values(<valores>...)
+
+----atualizar valor
+update <tabela>
+set <campo>=<valor>
+where <campo>=<valor>
+
+----deletar valor
+delete from <tabela>
+where <condição> (<campo>=<valor>)
+
+
+
+--------------CONSULTAR------------
+     _________
+    / /     \ \
+   /_/| 0/\0|\_\
+      \  \^//
+      /_____\
+
+select <campo> ou * from <tabela>
+
+----ordenar
+select <campo> from <tabela> order by <campo>
+
+----funções
+select avg()  ==>média
+select sum() ==> soma
+select max() ==>maior número
+select min() ==>menor valor
+
+----rotular
+select <campo> as 'rótulo' from <tabela>
+
+----!!!!!!!!WHERE-->condição
+
+select <campo> from <tabela> where <condição>
+
+>
+<
+>=
+<=
+<>
+in()
+not in()
+between <valor> and <valor>
+=
+like '%texto%'	
