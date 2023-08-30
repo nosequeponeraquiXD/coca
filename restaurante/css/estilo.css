@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=McLaren&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+section{
+	display: flex;
+	justify-content: center;
+}
+section.topo{
+	width: 99vw;
+	height: 10vh;
+	background: red;
+	margin-left: 0.5vw;
+	border-radius: 5px;
+	z-index: 2;
+}
+#logo{
+	width: 20%;
+	height: 100%;
+}
+#logo img{
+	width: 50%;
+	height: 100%;
+	padding-left: 40%;
+}
+#nome{
+	width: 20%;
+	height: 100%;
+}
+#nome h1{
+	color: #FDD837;
+	font-size: 2.2em;
+	font-family: 'McLaren', cursive;
+}
+#nome h1 span{
+	color: #FAD75B;
+	font-size: 2.2em;
+	font-family: 'McLaren', cursive;
+}
+#busca{
+	width: 25%;
+	height: 100%;
+}
+form.busca{
+	width: 100%;
+	height: 100%;
+	padding-top: 10%;
+}
+#links{
+	width: 25%;
+	height: 100%;
+
+}
+ul.nave{
+	list-style-type: none;
+	margin-top: 10%;
+}
+ul.nave li{
+	float: left;
+	margin-left: 5%;
+	border right: 1px solid white;
+}
+ul.nave li a{
+	text-decoration: none;
+	color: white;
+	font-family: 'Barriecito', cursive;
+}
+section.conteudo{
+	width: 100vw;
+	height: 80vh;
+	z-index: 1;
+}
+
+#quadro{
+	width: 100%;
+	height: 100%;
+	border: 0px;
+}
+section.rodape{
+	width: 99%;
+	height: 10vh;
+	margin-left: 0.5vw;
+	background: red;
+	z-index: 2;
+	border-radius: 5px;
+	color: white;
+}
+#sobre{
+	text-align: center;
+	width: 50%;
+	height: 100%;
+	font-family: 'McLaren', cursive;
+	border-right: 1px double white;
+}
+#sobre a{
+	text-decoration: none;
+	color: white;
+}
+#desenvolvida{
+	text-align: center;
+	width: 50%;
+	height: 100%;
+}
+#desenvolvida p{
+	font-family: 'McLaren', cursive;
+	padding-top: 4%;
+}
+
+form.normal{
+	color: #FDD837;
+	text-align: center;
+	width: 60%;
+	margin-left: 20vw;
+	min-height: 30vh;
+	border: 1px solid black;
+	border-radius: 22px;
+	background-color: red;
+	margin-top: 10vh;
+	text-align: center;
+	place-items: center;
+}
+
+form.normal h1{
+	color: #FDD837;
+	font-size: 2.2em;
+	font-family: 'McLaren', cursive;
+	text-align: center;
+
+
+}
+h2{
+	font-family: 'McLaren', cursive;
+	color: red;
+	text-align: center;
+}
+
+#administracao{
+	width: 55%;
+	height: 100%;
+}
+#produto{
+	width: 20%;
+	height: 50%;
+	margin-left: 5%;
+	border: 1px solid red;
+	text-align: center;
+	margin-right: 5%;
+	margin-top: 2%;
+}
+#produto img{
+	width: 90%;
+	height: 50%;
+	margin-left: 5%;
+}
+#produto p{
+	font-size: 1.3em;
+	color: red;
+	font-family: 'McLaren', cursive;
+}
+input.ver{
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-color: red;
+	color: yellow;
+	font-size: 1.3em;
+
+}
+input.mais{
+	border: 1px solid orange;
+	border-radius: 5px;
+	background-color: red;
+	color: yellow;
+	font-size: 1.5em;
+	font-family: 'McLaren', cursive;
+	margin-top: 20%;
+}
+table{
+	width: 90vw;
+	margin-left: 5vw;
+	min-height: 15vh;
+	margin-top: 10vh;
+	border: 2px inset red;
+
+}
+table th{
+	background: red;
+	color: whitesmoke;
+	font-size: 1.2em;
+	border: 1 px solid white;
+
+}
+table td{
+	border: 1px solid red;
+	text-align: center;
+}
+table img{
+	width: 60px;
+	height: 60px;
+}
+section.detalhes{
+	width: 80vw;
+	min-height: 15vh;
+	margin-left: 10vw;
+	margin-right: 15vw;
+	border: 1px solid red;
+
+}
+#img_produto{
+	width: 40%;
+	height: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#campos{
+	width: 40%;
+	height: 100%;
+	text-align: center;
+
+}
+#campos h1{
+	padding-top: 5%;
+	font-family: 'McLaren', cursive;
+	color: red;
+
+}
+#campos p{
+	color: #FDD837;
+	padding-top: 2%;
+	font-size: 1.3em;
+	font-family: 'McLaren', cursive;
+}
+section.descricao{
+	width: 60vw;
+	height: auto;
+	text-align: center;
+	background: red;
+	font-family: 'McLaren', cursive;
+	color: #FDD837;
+	margin-left: 20vw;
+}
