@@ -30,7 +30,6 @@ if (isset($_POST['botao'])&&isset($_POST['id'])) {
 	<p><img src="data:image/jpg;base64,<?= base64_encode($produto->getImagem())?>" style="width: 100px;height: 100px;"></p>
 	<p><input type="file" name="imagem"></p>
 	<input type="hidden" name="idalt" value="<?= $produto->getId()?>">	
-	<input type="hidden" name="imagemo" value="<?= addcslashes($produto->getImagem())?>">
 	<p><input type="submit" name="botao" value="Alterar"></p>
 </form>
 	
@@ -49,14 +48,13 @@ if (isset($_POST['botao'])&&isset($_POST['idalt'])) {
 	if (!$consulta) {
 		echo "<h2>Nenhum produto correspondente!</h2>";
 	}else{
-	if (isset($_POST['imagem'])) {
+		if ($_FILES['imagem']['tmp_name']!="") {
 		$imagem=$_FILES['imagem']['tmp_name'];
 		$imagem=addslashes(file_get_contents($imagem));
 		$produto->setImagem($imagem);
-
-	}else{
+		}else{
 		$linha=$consulta->fetch_assoc();
-		$produto->setImagem($linha['imagem']);
+		$produto->setImagem(addslashes($linha['imagem']));
 	}
 	$produto->setId($_POST['idalt']);
 	$produto->setNome($_POST['nome']);
@@ -69,7 +67,7 @@ if (isset($_POST['botao'])&&isset($_POST['idalt'])) {
 
 		}else{
 			echo "<h2>Produto alterado com sucesso!</h2>";
-		}
+	}
 }
 }
 ?>

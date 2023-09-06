@@ -24,7 +24,7 @@ section.topo{
 #logo img{
 	width: 50%;
 	height: 100%;
-	padding-left: 40%;
+	padding-left: 35%;
 }
 #nome{
 	width: 20%;
@@ -214,6 +214,11 @@ section.detalhes{
 	margin-left: 5%;
 	margin-right: 5%;
 }
+#img_produto img{
+	width: 200px;
+	height: 200px;
+	margin-top: 1%;
+}
 #campos{
 	width: 40%;
 	height: 100%;
@@ -240,4 +245,9 @@ section.descricao{
 	font-family: 'McLaren', cursive;
 	color: #FDD837;
 	margin-left: 20vw;
+}
+img.img_car{
+	width: 50 px;
+	height: 50 px;
+
 }

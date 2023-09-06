@@ -58,6 +58,18 @@ class ProdutoPA{
 		return $this->conexao->consultar($sql);
 	}
 
+	public function alterar($produto)
+	{
+		$sql="update produto set nome='".$produto->getNome()."',descricao='".$produto->getDescricao()."',valor=".$produto->getValor().",imagem='".$produto->getImagem()."' where id=".$produto->getId();
+		return $this->conexao->executar($sql);
+	}
+
+	public function excluir($id)
+	{
+		$sql="delete from produto where id=$id";
+		return $this->conexao->executar($sql);
+	}
+
 }
 
 ?>

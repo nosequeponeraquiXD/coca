@@ -17,6 +17,7 @@ require_once 'cabecalho.php';
 			<li><a href="cadastrarproduto.php" target="quadro">Cadastrar</a></li>
 			<li><a href="listarproduto.php" target="quadro">Listar</a></li>
 			<li><a href="alterarproduto.php" target="quadro">Alterar</a></li>
+			<li><a href="listarpedido.php" target="quadro">Pedido</a></li>
 			<li><a href="gerenciarusuario.php" target="quadro">Gerenciar Usuário</a></li>
 			<li><a href="sairadm.php">Sair</a></li>
 		</ul>

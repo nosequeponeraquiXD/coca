@@ -12,9 +12,9 @@ require_once 'cabecalho.php';
 		<h1><span>B</span>urger <span>M</span>aster&reg;</h1>
 	</div>
 	<div id="busca">
-		<form class="busca" action="busca.php" method="get" target="quadro">
+		<form class="busca" action="busca.php" method="GET" target="quadro">
 			<input type="search" name="busca">
-			<input type="submit" name="name" value="&#128269;">
+			<input type="submit" name="botao" value="&#128269;">
 		</form>
 	</div>
 	<div id="links">

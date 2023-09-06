@@ -62,6 +62,12 @@ class ClientePA{
 			return $teste;
 		}
 	}
+
+	public function retornarId($cpf)
+	{
+		$sql="select id from cliente where cpf=$cpf";
+		return $this->conexao->consultar($sql);
+	}
 }
 
 ?>
