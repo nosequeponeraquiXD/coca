@@ -5,7 +5,7 @@ require_once 'cabecalho.php';
 <form action="login_admin.php" class="normal" method="POST">
 	<h1>Login Administrador</h1>
 	<p>Usuario:<input type="text" name="usuario" size="20" maxlength="20" pattern="[0-9a-zA-Z_]{1,20}" required></p>
-	<p>Senha:<input type="text" name="senha" size="10" maxlength="10" pattern="[0-9a-zA-Z_\s@]{1,10}"></p>
+	<p>Senha:<input type="password" name="senha" size="10" maxlength="10" pattern="[0-9a-zA-Z_\s@]{1,10}"></p>
 	<p><input type="submit" name="botao" value="Logar"></p>
 </form>
 <?php

@@ -70,6 +70,11 @@ class ProdutoPA{
 		return $this->conexao->executar($sql);
 	}
 
+	public function converteIdParaNome($id)
+	{
+		$sql="select nome from produto where id=$id";
+		return $this->conexao->consultar($sql);
+	}
 }
 
 ?>

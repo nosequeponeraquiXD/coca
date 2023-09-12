@@ -38,6 +38,10 @@ class ItemPA{
 			return $id;
 		}
 	}
-
+	public function listar($idped)
+	{
+		$sql="select * from item where pedido=$idped";
+		return $this->conexao->consultar($sql);
+	}
 }
 ?>

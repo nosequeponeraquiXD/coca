@@ -39,5 +39,10 @@ class PedidoPA{
 		}
 	}
 
+	public function listar()
+	{
+		$sql="select * from pedido";
+		return $this->conexao->consultar($sql);
+	}
 }
 ?>

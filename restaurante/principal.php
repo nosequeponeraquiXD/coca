@@ -1,5 +1,6 @@
 <?php
 require_once 'cabecalho.php';
+if (isset($_COOKIE['admin'])) {
 
 ?>
 
@@ -37,5 +38,11 @@ require_once 'cabecalho.php';
 		<p>desenvolvida no SENAC-PG&trade;</p>
 	</div>
 </section>
+<?php
+}else{
+	echo "<h2>????</h2>";
+}
+
+?>
 </body>
 </html>

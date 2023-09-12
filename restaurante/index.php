@@ -40,7 +40,7 @@ require_once 'cabecalho.php';
 </section>
 <section class="rodape">
 	<div id="sobre">
-		<p>Burguer Master&reg;</p>
+		<p>Burger Master&reg;</p>
 		<p>Rua X de Y, 99</p>
 		<p>Ponta Grossa-P<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">R</a></p>
 		<p>&#128222; (42) 3232-7777</p>

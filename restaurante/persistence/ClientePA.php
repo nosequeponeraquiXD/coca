@@ -68,6 +68,11 @@ class ClientePA{
 		$sql="select id from cliente where cpf=$cpf";
 		return $this->conexao->consultar($sql);
 	}
+	public function converteIdParaNome($id)
+	{
+		$sql="select nome from cliente where id=$id";
+		return $this->conexao->consultar($sql);
+	}
 }
 
 ?>

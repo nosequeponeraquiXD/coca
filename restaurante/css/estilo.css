@@ -60,7 +60,7 @@ ul.nave{
 }
 ul.nave li{
 	float: left;
-	margin-left: 5%;
+	margin-left: 4%;
 	border right: 1px solid white;
 }
 ul.nave li a{
@@ -250,4 +250,21 @@ img.img_car{
 	width: 50 px;
 	height: 50 px;
 
+}
+#menu_admin{
+	width: 40vw;
+	min-height: 15vh;
+	border: 2px inset red;
+	border-radius: 22px;
+	text-align: center;
+	margin-top: 10%;
+}
+#menu_admin a{
+	background-color: red;
+	width: 40%;
+	font-size: 1.5em;
+	color: #FDD837;
+	text-decoration: none;
+	border-radius: 5px;
+	font-family: 'McLaren', cursive;
 }
